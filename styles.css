@@ -796,7 +796,7 @@ textarea::placeholder {
     right: 20px;
     cursor: pointer;
     color: red;
-    font-size: 20px !important;
+    font-size: 30px !important;
     font-weight: bold;
     display: block !important;
   }
@@ -806,6 +806,7 @@ textarea::placeholder {
     width: 100%;
     height: 100%;
     display: grid;
+    overflow: hidden;
     place-items: center;
     flex-direction: column;
     justify-content: space-around;
@@ -919,8 +920,8 @@ textarea::placeholder {
 
     text-align: center;
     height: auto;
-    padding: 20px 0;
-    margin-top: 50px;
+    padding: 0px 0;
+    margin-top: 0px;
   }
 
   .event-image {
@@ -933,7 +934,7 @@ textarea::placeholder {
     width: 100%;
     height: 100%;
     object-fit: fill;
-    border-radius: 5px;
+    border-radius: 0px;
   }
 
   .event-content {
@@ -944,12 +945,12 @@ textarea::placeholder {
     margin-top: 20px;
   }
 
-  /* .event-content h1 {
+  .event-content h1 {
     text-align: center;
     line-height: 1.2;
     margin-bottom: 30px;
     font-size: 40px;
-    word-spacing: 5px;
+    word-spacing: 2px;
     color: rgb(23, 12, 85);
   }
 
@@ -989,13 +990,19 @@ textarea::placeholder {
     font-weight: 500;
     font-size: 18px;
     color: rgb(23, 12, 85);
-  } */
-
-  .services {
+  }
+  */ .services {
     padding: 20px 10px;
     margin-top: 50px;
     height: auto;
     text-align: center;
+  }
+
+  .services h1 {
+    word-spacing: 2px;
+    color: rgb(23, 12, 85);
+    font-size: 35px;
+    margin-bottom: 10px;
   }
   /* .services span:first-child {
     color: goldenrod;
@@ -1004,12 +1011,7 @@ textarea::placeholder {
     color: rgb(23, 12, 85);
   }
 
-  .services h1 {
-    word-spacing: 5px;
-    color: rgb(23, 12, 85);
-    font-size: 40px;
-    margin-bottom: 10px;
-  } */
+
 
   .services-main {
     display: flex;
@@ -1062,9 +1064,9 @@ textarea::placeholder {
   }
 
   .choose h1 {
-    word-spacing: 5px;
+    word-spacing: 2px;
     color: rgb(23, 12, 85);
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 10px;
   }
 
@@ -1156,10 +1158,10 @@ textarea::placeholder {
   }
 
   .testimony h1 {
-    word-spacing: 5px;
+    word-spacing: 2px;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .testimony span:first-child {
@@ -1195,12 +1197,12 @@ textarea::placeholder {
     place-items: center;
   }
 
-  /* .team h1 {
-    word-spacing: 4px;
+  .team h1 {
+    word-spacing: 2px;
     color: rgb(23, 12, 85);
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 30px;
-  } */
+  }
 
   .team-container {
     width: 100%;
@@ -1258,7 +1260,15 @@ textarea::placeholder {
 
     margin-top: 0px;
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px 10px;
+  }
+
+  .contact h1 {
+    text-align: center;
+    word-spacing: 2px;
+    color: rgb(23, 12, 85);
+    font-size: 35px;
+    margin-bottom: 10px;
   }
   /* 
   .contact h1 {
@@ -1400,7 +1410,7 @@ textarea::placeholder {
   }
 
   .f-image p {
-    opacity: 0.8;
+    color: #aaa;
     margin-top: 10px;
   }
   .f-links h4 {
@@ -1418,6 +1428,7 @@ textarea::placeholder {
 
   .f-links a {
     color: #aaa;
+    font-size: 16px;
   }
   .f-rights span {
     font-size: 12px;
@@ -1438,4 +1449,15 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 450px) {
+  .event-content {
+    width: 360px;
+  }
+
+  .testimony article {
+    width: 360px;
+  }
+
+  .close {
+    font-size: 45px;
+  }
 }
