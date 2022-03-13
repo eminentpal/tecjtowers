@@ -40,10 +40,10 @@ const questions = [
 let index = 0;
 
 const images = [
-  "/images/eventimage.jpg",
-  "/images/event.png",
-  "/images/event5.jpg",
-  "/images/event3.jpg",
+  "./images/eventimage.jpg",
+  "./images/event.png",
+  "./images/event5.jpg",
+  "./images/event3.jpg",
 ];
 
 const header = document.getElementById("header-cont");
