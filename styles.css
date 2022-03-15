@@ -394,6 +394,13 @@ li {
 .container-two {
   width: 100%;
   height: auto;
+  /* background-color: #00238c;
+background-image: url("https://www.transparenttextures.com/patterns/cubes.png"); */
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+
+  background-color: #f5f0f0;
 }
 
 .testimony {
@@ -842,8 +849,8 @@ textarea::placeholder {
     position: absolute;
     right: 20px;
     cursor: pointer;
-    color: red;
-    font-size: 30px !important;
+    color: grey;
+    font-size: 25px !important;
     font-weight: bold;
     display: block !important;
   }
@@ -888,7 +895,7 @@ textarea::placeholder {
     background-color: goldenrod;
     font-weight: bold;
     border: none !important;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: auto;
     margin-top: 60px;
     text-align: center;
@@ -1237,6 +1244,7 @@ textarea::placeholder {
   .testimony article {
     width: 400px;
     height: 250px;
+    text-align: center;
   }
 
   .testimony-toggle {

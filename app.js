@@ -192,13 +192,27 @@ const open = document.querySelector(".open");
 const close = document.querySelector(".close");
 const nav = document.querySelector(".nav-links");
 const closeNavs = document.querySelectorAll(".scroll-link");
+// const navbar = document.querySelector("")
 
 closeNavs.forEach((hide) => {
-  hide.addEventListener("click", () => {
+  hide.addEventListener("click", (e) => {
+    e.preventDefault();
     console.log(hide);
+    const id = e.currentTarget.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+
+    // const navHeight = navbar.getBoundingClientRect().height;
+    let position = element.offsetTop;
+    console.log("position");
+    window.scrollTo({
+      left: 0,
+      top: position,
+    });
+
     nav.classList.remove("show-links");
   });
 });
+
 open.addEventListener("click", () => {
   nav.classList.add("show-links");
   console.log(nav.classList);
@@ -209,7 +223,7 @@ close.addEventListener("click", () => {
   console.log(nav.classList);
 });
 
-// this is for scroll
+// this is for scroll to hide the scroll button
 const scroll = document.querySelector(".scroll");
 window.addEventListener("scroll", () => {
   const scrollHeight = window.pageYOffset;
