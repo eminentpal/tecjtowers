@@ -65,26 +65,63 @@ setInterval(() => chnage(), 6000);
 
 const countOne = document.querySelector(".counter");
 const countTwo = document.querySelector(".counter-2");
-let x = 0;
+const countThree = document.querySelector(".counter-3");
+const countFour = document.querySelector(".counter-4");
+const counts = document.querySelectorAll(".count");
+let a = 0;
+let b = 0;
+let c = 0;
+let d = 0;
 
-let y = 50;
-let a = 70;
+function counterOne() {
+  let one = countOne.dataset.to;
+  countOne.innerHTML = a;
+  a += 1;
 
-function addNum() {
-  //   countEl.forEach((element) => {
-  //     element.innerHTML = x;
-  //     console.log(element);
-  //   });
-  countOne.innerHTML = x;
-  countTwo.innerHTML = x;
-  x += 1;
-  console.log(x);
-  if ((x > y) & (x > a)) {
-    clearInterval(timer);
+  console.log(one);
+
+  if (a > one) {
+    clearInterval(stopOne);
   }
 }
 
-// const timer = window.setInterval(() => addNum(), 60);
+const stopOne = window.setInterval(() => counterOne(), 60);
+
+function counterTwo() {
+  let two = countTwo.dataset.to;
+  countTwo.innerHTML = b;
+
+  b += 1;
+  if (b > two) {
+    clearInterval(stopTwo);
+  }
+}
+
+const stopTwo = window.setInterval(() => counterTwo(), 60);
+
+function counterThree() {
+  let three = countThree.dataset.to;
+  countThree.innerHTML = c;
+
+  c += 1;
+  if (c > three) {
+    clearInterval(stopThree);
+  }
+}
+
+const stopThree = window.setInterval(() => counterThree(), 60);
+
+function counterFour() {
+  let four = countFour.dataset.to;
+  countFour.innerHTML = d;
+
+  d += 1;
+  if (d > four) {
+    clearInterval(stopFour);
+  }
+}
+
+const stopFour = window.setInterval(() => counterFour(), 60);
 
 //TESTIMONIAL
 
