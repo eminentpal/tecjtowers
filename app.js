@@ -128,22 +128,19 @@ const stopFour = window.setInterval(() => counterFour(), 60);
 const testimonies = [
   {
     id: 1,
-    image:
-      "https://happy-events.cmsmasters.net/wp-content/uploads/2015/11/1-1.jpg",
+    image: "./images/2.png",
     name: "Victorial Akin",
     text: "  My family and I are beyond happy to have them plan our wedding.",
   },
   {
     id: 2,
-    image:
-      "https://happy-events.cmsmasters.net/wp-content/uploads/2015/11/Untitled-1-1.jpg",
+    image: "./images/client3.png",
     name: "Blessing James",
     text: "TECJ Towers did a perfect  decoration and perfect buffet for my little sisters birthday party!",
   },
   {
     id: 3,
-    image:
-      "https://happy-events.cmsmasters.net/wp-content/uploads/2015/11/2-4.jpg",
+    image: "./images/client1.png",
     name: "Peace Samuel",
     text: " Look no further! You are in the right place to plan your event.",
   },
