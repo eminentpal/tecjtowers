@@ -7,14 +7,18 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet/scss" href="./style.scss" />
-    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
+    /> -->
+    <!-- 
     <link
       rel="stylesheet"
       href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
@@ -22,11 +26,11 @@
     <link
       rel="stylesheet"
       href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css"
-    />
+    /> -->
   </head>
   <body>
     <section id="header-cont" class="header-cont">
-      <header class="header">
+      <header id="home" class="header">
         <nav class="nav">
           <div class="logo">
             <img src="./images/tecj3.png" alt="" />
@@ -34,10 +38,10 @@
           <div class="nav-links">
             <i class="fa close fa-times-circle"></i>
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Contact Us</a></li>
+              <li><a class="scroll-link" href="#home">Home</a></li>
+              <li><a class="scroll-link" href="#services">Services</a></li>
+              <li><a class="scroll-link" href="#about">About Us</a></li>
+              <li><a class="scroll-link" href="#contact">Contact Us</a></li>
               <li class="book"><a href="">Book Now</a></li>
             </ul>
           </div>
@@ -65,7 +69,7 @@
     </section>
 
     <div class="container">
-      <div class="event">
+      <div id="about" class="event">
         <div class="event-image">
           <img src="./images/wedd.jpg" alt="event" />
         </div>
@@ -110,7 +114,7 @@
         </div>
       </div>
       <!--services-->
-      <div class="services">
+      <div id="services" class="services">
         <h1><span>See</span> Our Event Services!</h1>
         <p>It’s simple. You have an event to plan and we have the solutions.</p>
         <div class="services-main">
@@ -257,7 +261,7 @@
 
       <!--contact-->
 
-      <div class="contact">
+      <div id="contact" class="contact">
         <h1>Get In <span>Touch</span> With Us</h1>
         <p>You can reach us via any of the channels below:</p>
         <div class="contact-box">
@@ -322,7 +326,11 @@
           >
         </div>
       </div>
-      <span class="scroll"><i class="fa fa-arrow-up"></i></span>
+      <a class="scroll-a" href="#home"
+        ><span class="scroll-link scroll">
+          <i class="fas fa-arrow-up"></i>
+        </span>
+      </a>
     </section>
 
     <!--second container ends here-->

@@ -191,7 +191,14 @@ console.log(find_max(nums));
 const open = document.querySelector(".open");
 const close = document.querySelector(".close");
 const nav = document.querySelector(".nav-links");
+const closeNavs = document.querySelectorAll(".scroll-link");
 
+closeNavs.forEach((hide) => {
+  hide.addEventListener("click", () => {
+    console.log(hide);
+    nav.classList.remove("show-links");
+  });
+});
 open.addEventListener("click", () => {
   nav.classList.add("show-links");
   console.log(nav.classList);
@@ -213,3 +220,7 @@ window.addEventListener("scroll", () => {
     scroll.classList.remove("show-scroll");
   }
 });
+
+// scroll.addEventListener("click", () =>{
+//   scrollTo()
+// })
