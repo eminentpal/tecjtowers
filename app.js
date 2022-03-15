@@ -40,8 +40,8 @@ const questions = [
 let index = 0;
 
 const images = [
-  "./images/eventimage.jpg",
-  "./images/event.png",
+  "./images/ladies.jpg",
+  "https://www.bellanaijaweddings.com/wp-content/uploads/2019/03/Nkiruka-Frank-BellaNaija-Weddings-140.jpg",
   "./images/event5.jpg",
   "./images/event3.jpg",
 ];
@@ -200,4 +200,16 @@ open.addEventListener("click", () => {
 close.addEventListener("click", () => {
   nav.classList.remove("show-links");
   console.log(nav.classList);
+});
+
+// this is for scroll
+const scroll = document.querySelector(".scroll");
+window.addEventListener("scroll", () => {
+  const scrollHeight = window.pageYOffset;
+
+  if (scrollHeight > 500) {
+    scroll.classList.add("show-scroll");
+  } else {
+    scroll.classList.remove("show-scroll");
+  }
 });
