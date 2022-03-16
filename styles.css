@@ -682,6 +682,12 @@ textarea::placeholder {
   text-align: center;
 }
 
+.success {
+  color: green !important;
+  margin-top: 20px;
+  visibility: hidden;
+}
+
 .footer {
   width: 100%;
   height: auto;
@@ -1383,7 +1389,7 @@ textarea::placeholder {
     margin: auto;
     height: auto;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   /* .contact1 input {
@@ -1451,6 +1457,11 @@ textarea::placeholder {
     text-align: center;
   }
 
+  .success {
+    color: green !important;
+    margin-top: 20px;
+    visibility: hidden;
+  }
   .footer {
     width: 100%;
     height: auto;

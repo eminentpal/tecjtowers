@@ -135,7 +135,7 @@ const testimonies = [
   {
     id: 2,
     image: "./images/client3.png",
-    name: "Blessing James",
+    name: "Ola James",
     text: "TECJ Towers did a perfect  decoration and perfect buffet for my little sisters birthday party!",
   },
   {

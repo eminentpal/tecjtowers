@@ -12,6 +12,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
 
+    <!--email js-->
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("TyfaDZNgWy15W-5WM");
+      })();
+    </script>
+
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <!-- <link
       rel="stylesheet"
@@ -261,14 +273,27 @@
         <p>You can reach us via any of the channels below:</p>
         <div class="contact-box">
           <div class="contact1">
-            <form>
-              <input type="text" placeholder="Your name" />
-              <input type="text" placeholder="Your email" />
-              <input type="text/number" placeholder="Your mobile" name="" />
-              <input type="text" placeholder="Subject" />
-              <textarea placeholder="Your message" row="3"></textarea>
-              <button type="submit">Send</button>
+            <form id="myForm">
+              <input id="name" type="text" placeholder="Your name" />
+              <input id="email" type="text" placeholder="Your email" />
+              <input
+                id="mobile"
+                type="text/number"
+                placeholder="Your mobile"
+                name=""
+              />
+              <input id="subject" type="text" placeholder="Subject" />
+              <textarea
+                id="message"
+                placeholder="Your message"
+                row="3"
+              ></textarea>
+              <button id="submit" type="submit">Send</button>
             </form>
+            <br />
+            <span class="success">
+              Successfully sent. We will get in touch soon!!!
+            </span>
           </div>
 
           <div class="contact2">
@@ -282,7 +307,6 @@
             <p>admin@tecjtowers.com</p>
             <h5><i class="fa fa-stopwatch"></i>Working Hours:</h5>
             <p>Monday–Friday: 9AM – 5PM</p>
-
             <p>Saturday: 10AM -3PM</p>
           </div>
         </div>
@@ -316,7 +340,7 @@
         </div>
         <div class="f-rights">
           <span
-            >Tecj Towers Event Management © 2022 | All Rights Reserved. Design &
+            >TECJ Towers Event Management © 2022 | All Rights Reserved. Design &
             Developed by <a href="">Eminent Media NG</a></span
           >
         </div>
@@ -329,6 +353,7 @@
     <!--second container ends here-->
     <!-- javascript -->
     <script src="./app.js"></script>
+    <script src="./email.js"></script>
     <script>
       // let index = 0;
 
