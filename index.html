@@ -54,7 +54,7 @@
               <li><a class="scroll-link" href="#services">Services</a></li>
               <li><a class="scroll-link" href="#about">About Us</a></li>
               <li><a class="scroll-link" href="#contact">Contact Us</a></li>
-              <li class="book"><a href="">Book Now</a></li>
+              <li class="book book-now"><a href="">Book Now</a></li>
             </ul>
           </div>
           <i class="fa open fa-bars"></i>
@@ -71,7 +71,7 @@
               With our passion, knowledge, creative flair and inspiration, we
               are dedicated in helping you plan your event.
             </p>
-            <button>Book Now</button>
+            <button class="book-now">Book Now</button>
           </div>
           <div class="header-image">
             <img id="image" src="./images/event.png" alt="event" />
@@ -274,19 +274,26 @@
         <div class="contact-box">
           <div class="contact1">
             <form id="myForm">
-              <input id="name" type="text" placeholder="Your name" />
-              <input id="email" type="text" placeholder="Your email" />
+              <input
+                id="name"
+                required="'true"
+                type="text"
+                placeholder="Your name"
+              />
+              <input id="email" required type="text" placeholder="Your email" />
               <input
                 id="mobile"
                 type="text/number"
                 placeholder="Your mobile"
                 name=""
+                required
               />
               <input id="subject" type="text" placeholder="Subject" />
               <textarea
                 id="message"
                 placeholder="Your message"
                 row="3"
+                required
               ></textarea>
               <button id="submit" type="submit">Send</button>
             </form>
@@ -328,7 +335,7 @@
               <li><a class="scroll-link" href="#services">Services</a></li>
               <li><a class="scroll-link" href="#about">About Us</a></li>
               <li><a class="scroll-link" href="#contact">Contact Us</a></li>
-              <li><a class="scroll-link" href="">Book Now</a></li>
+              <li><a class="book-now" href="">Book Now</a></li>
             </ul>
           </div>
           <div class="socials">
@@ -348,6 +355,42 @@
       <a class="scroll-a scroll scroll-link" href="#home">
         <i class="fas fa-arrow-up"></i>
       </a>
+
+      <!--MODAL-->
+      <div class="modal-container">
+        <div class="modal">
+          <i class="fa close-modal fa-times-circle"></i>
+          <h2>Get In Touch</h2>
+          <form id="myForm">
+            <input
+              id="name"
+              required="'true"
+              type="text"
+              placeholder="Your name"
+            />
+            <input id="email" required type="text" placeholder="Your email" />
+            <input
+              id="mobile"
+              type="text/number"
+              placeholder="Your mobile"
+              name=""
+              required
+            />
+            <input id="subject" type="text" placeholder="Subject" />
+            <textarea
+              id="message"
+              placeholder="Your message"
+              row="3"
+              required
+            ></textarea>
+            <button id="book-now" type="submit">Send</button>
+          </form>
+          <br />
+          <span class="success-message">
+            Successfully sent. We will get in touch soon!!!
+          </span>
+        </div>
+      </div>
     </section>
 
     <!--second container ends here-->

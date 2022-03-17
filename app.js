@@ -237,7 +237,7 @@ closeNavs.forEach((hide) => {
 
     // const navHeight = navbar.getBoundingClientRect().height;
     let position = element.offsetTop;
-    console.log("position");
+    console.log(position);
     window.scrollTo({
       left: 0,
       top: position,
@@ -272,3 +272,30 @@ window.addEventListener("scroll", () => {
 // scroll.addEventListener("click", () =>{
 //   scrollTo()
 // })
+
+//Close modal
+
+const closeModal = document.querySelector(".close-modal");
+const modal = document.querySelector(".modal-container");
+const bookNow = document.querySelectorAll(".book-now");
+
+// const bookOne = document.getElementById("book-now");
+
+closeModal.addEventListener("click", (e) => {
+  e.preventDefault();
+  modal.classList.toggle("show-modal");
+});
+
+bookNow.forEach((book) => {
+  book.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.classList.toggle("show-modal");
+
+    //incase the navbar is showing open on mobile
+    nav.classList.remove("show-links");
+  });
+});
+
+// bookOne.addEventListener("click", () => {
+//   modal.classList.toggle("show-modal");
+// });
