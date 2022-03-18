@@ -241,3 +241,25 @@ function validateEmailMes() {
     return true;
   }
 }
+
+// Hello {{to_name}},
+
+// You received a new message from {{from_name}}:
+
+// Event:
+
+// {{subject}}
+
+// Message:
+
+// {{message}}
+
+// Phone/Email:
+
+// {{mobile}}
+
+// {{email}}
+
+// Best wishes,
+
+// TECJ Towers Email team.
