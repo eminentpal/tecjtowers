@@ -400,7 +400,7 @@ background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 
   background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
 
-  background-color: #f5f0f0;
+  background-color: #f5f3f0;
 }
 
 .testimony {
@@ -408,7 +408,7 @@ background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   height: 450px;
   color: white;
   background: linear-gradient(rgba(68, 2, 2, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./images/dancing.jpeg");
+    url("./images/trad.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;

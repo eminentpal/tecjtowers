@@ -40,8 +40,8 @@ const questions = [
 let index = 0;
 
 const images = [
-  "./images/ladies.jpg",
-  "https://www.bellanaijaweddings.com/wp-content/uploads/2019/03/Nkiruka-Frank-BellaNaija-Weddings-140.jpg",
+  "./images/wedding-reception-decor-2.jpg",
+  "https://tresorpastriesandaccs.com.ng/wp-content/uploads/2021/02/WhatsApp-Image-2021-02-02-at-15.40.20.jpeg",
   "./images/event5.jpg",
   "./images/event3.jpg",
 ];
